@@ -1,4 +1,6 @@
-Saúde Mental | https://henriqueiatech.github.io/qatlli/podcast.txt
+Saúde Mental | https://traffic.megaphone.fm/GLT3446402672.mp3?updated=1748907841
+Ansiedade | https://traffic.megaphone.fm/GLT5670835570.mp3?updated=1753742394
+Comportamento | https://traffic.megaphone.fm/GLT2505292577.mp3?updated=1753144919
 Evitar Acidentes | https://audios.ebc.com.br/radiogov/2025/07/15-07-2025-papo-sau-de-prev-quedas.mp3
 Sistema Único de Saúde | https://audios.ebc.com.br/radiogov/2025/05/21-05-2025-papo-saude-especial-sus-episodio-2.mp3
 Saúde mental é coletiva | https://audios.ebc.com.br/radiogov/2025/10/papo-sau-de-mental-corte-social.mp3
@@ -11,4 +13,10 @@ Saúde Integral da Mulher | https://audios.ebc.com.br/radiogov/2024/03/12-03-202
 Farmácia Popular | https://audios.ebc.com.br/radiogov/2024/01/06-12-2023-podcast-saude-mental-pop-negra.mp3
 Sífilis e Sífilis Congênita | https://audios.ebc.com.br/radiogov/2024/10/23-10-2024-papo-saude-sifilis.mp3
 HIV/AIDS, combater a epidemia | https://audios.ebc.com.br/radiogov/2023/12/papo-saude-dezembro-vermelho-v3.mp3
-Saúde Mental | https://www.youtube.com/watch?v=jhzFZ86JUeY
+Saúde Mental | https://www.youtube.com/jhzFZ86JUeY
+Água Saudável | https://www.pastoraldacrianca.org.br/materiais-sonoros/category/10-vinhetas-anvisa-alimentacao-higiene-e-saude?download=185:agua-a-qualidade-da-agua-spot-3
+Alimentos | https://www.pastoraldacrianca.org.br/materiais-sonoros/category/10-vinhetas-anvisa-alimentacao-higiene-e-saude?download=193:alimentos-e-agrotoxicos-programa-de-3-a-5-min
+Alimentos nas Ruas | https://www.pastoraldacrianca.org.br/materiais-sonoros/category/10-vinhetas-anvisa-alimentacao-higiene-e-saude?download=199:alimentos-em-ruas-bares-e-restaurantes-cd1-23-spot-higiene-em-bares-e-restaurantes
+Alimentos nas Ruas b | https://archive.org/download/tonico-tinoco/Cavaquinho%20no%20Samba%20-%20Tonico%20%26%20Tinoco.MP3
+Alimentos nas Ruas c', url: 'https://www.pastoraldacrianca.org.br/materiais-sonoros/category/10-vinhetas-anvisa-alimentacao-higiene-e-saude?download=201:alimentos-em-ruas-bares-e-restaurantes-cd1-25-spot-doencas-transmitidas-por-alimentos
+Brasil Fora da Fome | https://traffic.omny.fm/d/clips/651a251e-06e1-47e0-9336-ac5a00f41628/04561b43-753d-4784-8e19-ac8b00e86411/a1f35a1a-ba93-4f0a-9bd8-b3290035a13f/audio.mp3?utm_source=Podcast&in_playlist=3036d550-85b2-4301-b1e4-ac8b00e8641f
