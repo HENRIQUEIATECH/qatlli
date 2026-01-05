@@ -55,5 +55,40 @@ Minha história Gesùbambino | https://dn721208.ca.archive.org/0/items/1971-chic
 Acalanto | https://dn721208.ca.archive.org/0/items/1971-chico-buarque-construcao/10%20-%20Acalanto.mp3
 Milton Nascimento | https://dn720303.ca.archive.org/0/items/Milton-Nascimento_Sentinela/media/user/SCRAPE/test/2021-10-milton-nascimento/extracted/Milton%20Nas/04%20Can%C3%A7%C3%A3o%20Da%20America.mp3
 Canção Da America | https://dn720303.ca.archive.org/0/items/Milton-Nascimento_Sentinela/media/user/SCRAPE/test/2021-10-milton-nascimento/extracted/Milton%20Nas/04%20Can%C3%A7%C3%A3o%20Da%20America.mp3
-
+Caetano Veloso Tropicália | https://ia800706.us.archive.org/8/items/1968-caetano-veloso_202504/01%20Tropic%C3%A1lia.mp3
+Caetano Veloso Clarice | https://dn721904.ca.archive.org/0/items/1968-caetano-veloso_202504/02%20Clarice.mp3
+Caetano Veloso No dia em que vim-me embora | https://dn721904.ca.archive.org/0/items/1968-caetano-veloso_202504/03%20No%20dia%20em%20que%20vim-me%20embora.mp3
+Caetano Veloso Alegria, alegria | https://dn721904.ca.archive.org/0/items/1968-caetano-veloso_202504/04%20Alegria%2C%20alegria.mp3
+Caetano Veloso Onde andarás | https://ia800706.us.archive.org/8/items/1968-caetano-veloso_202504/05%20Onde%20andar%C3%A1s.mp3
+Caetano Veloso Anunciação | https://dn721904.ca.archive.org/0/items/1968-caetano-veloso_202504/06%20Anuncia%C3%A7%C3%A3o.mp3
+Caetano Veloso Superbacana | https://dn721904.ca.archive.org/0/items/1968-caetano-veloso_202504/07%20Superbacana.mp3
+Caetano Veloso Paisagem útil | https://dn721904.ca.archive.org/0/items/1968-caetano-veloso_202504/08%20Paisagem%20%C3%BAtil.mp3
+Caetano Veloso Clara | https://ia800706.us.archive.org/8/items/1968-caetano-veloso_202504/09%20Clara.mp3
+Caetano Veloso Soy loco por ti, América | https://dn721904.ca.archive.org/0/items/1968-caetano-veloso_202504/10%20Soy%20loco%20por%20ti%2C%20Am%C3%A9rica.mp3
+Caetano Veloso Ave-Maria | https://dn721904.ca.archive.org/0/items/1968-caetano-veloso_202504/11%20Ave-Maria.mp3
+Caetano Veloso Eles | https://dn721904.ca.archive.org/0/items/1968-caetano-veloso_202504/12%20Eles.mp3
+Gal Costa Não identificado | https://ia801203.us.archive.org/22/items/1969-gal-costa_202506/01%20-%20N%C3%A3o%20identificado.mp3
+Gal Costa Sebastiana part Gilberto Gil | https://dn720700.ca.archive.org/0/items/1969-gal-costa_202506/02%20-%20Sebastiana%20%28part.%20Gilberto%20Gil%29.mp3
+Gal Costa Lost in the Paradise | https://dn720700.ca.archive.org/0/items/1969-gal-costa_202506/03%20-%20Lost%20in%20the%20Paradise.mp3
+Gal Costa Namorinho de portão part Gilberto Gil | https://dn720700.ca.archive.org/0/items/1969-gal-costa_202506/04%20-%20Namorinho%20de%20port%C3%A3o%20%28part.%20Gilberto%20Gil%29.mp3
+Gal Costa Saudosismo | https://dn720700.ca.archive.org/0/items/1969-gal-costa_202506/05%20-%20Saudosismo.mp3
+Gal Costa Se você pensa | https://ia801203.us.archive.org/22/items/1969-gal-costa_202506/06%20-%20Se%20voc%C3%AA%20pensa.mp3
+Gal Costa  Vou recomeçar | https://ia801203.us.archive.org/22/items/1969-gal-costa_202506/07%20-%20Vou%20recome%C3%A7ar.mp3
+Gal Costa Divino, maravilhoso | https://dn720700.ca.archive.org/0/items/1969-gal-costa_202506/08%20-%20Divino%2C%20maravilhoso.mp3
+Gal Costa Que pena part Caetano Veloso | https://dn720700.ca.archive.org/0/items/1969-gal-costa_202506/09%20-%20Que%20pena%20%28ele%20j%C3%A1%20n%C3%A3o%20gosta%20mais%20de%20mim%29%20%28part.%20Caetano%20Veloso%29.mp3
+Gal Costa Baby (part. Caetano Veloso) | https://dn720700.ca.archive.org/0/items/1969-gal-costa_202506/10%20-%20Baby%20%28part.%20Caetano%20Veloso%29.mp3
+Gal Costa A coisa mais linda que existe | https://dn720700.ca.archive.org/0/items/1969-gal-costa_202506/11%20-%20A%20coisa%20mais%20linda%20que%20existe.mp3
+Gal Costa Deus é o amor | https://dn720700.ca.archive.org/0/items/1969-gal-costa_202506/12%20-%20Deus%20%C3%A9%20o%20amor.mp3
+Jorge Ben Mas, que nada! | https://dn721803.ca.archive.org/0/items/1963-jorge-ben-samba-esquema-novo/01%20-%20Mas%2C%20Que%20Nada%21.mp3
+Jorge Ben Tim, dom, dom | https://dn721803.ca.archive.org/0/items/1963-jorge-ben-samba-esquema-novo/02%20-%20Tim%2C%20Dom%2C%20Dom.mp3
+Jorge Bem Balanca Pema | https://dn721803.ca.archive.org/0/items/1963-jorge-ben-samba-esquema-novo/03%20-%20Balanca%20Pema.mp3
+Jorge Ben Vem, morena, vem | https://dn721803.ca.archive.org/0/items/1963-jorge-ben-samba-esquema-novo/04%20-%20Vem%2C%20Morena%2C%20Vem.mp3
+Jorge Ben Chove, chuva | https://dn721803.ca.archive.org/0/items/1963-jorge-ben-samba-esquema-novo/05%20-%20Chove%2C%20Chuva.mp3
+Jorge Ben É só sambar | https://ia801308.us.archive.org/18/items/1963-jorge-ben-samba-esquema-novo/06%20-%20E%20So%20Sambar.mp3
+JOrge Ben Rosa, menina Rosa | https://dn721803.ca.archive.org/0/items/1963-jorge-ben-samba-esquema-novo/07%20-%20Rosa%2C%20Menina%20Rosa.mp3
+Jorge Ben Quero esquecer você | https://dn721803.ca.archive.org/0/items/1963-jorge-ben-samba-esquema-novo/08%20-%20Quero%20Esquecer%20Voce.mp3
+Jorge Ben Ualá, Ualalá | https://dn721803.ca.archive.org/0/items/1963-jorge-ben-samba-esquema-novo/09%20-%20Uala%2C%20Ualala.mp3
+Jorge Ben A tamba | https://dn721803.ca.archive.org/0/items/1963-jorge-ben-samba-esquema-novo/10%20-%20A%20Tamba.mp3
+Jorge Ben Menina bonita não chora | https://ia801308.us.archive.org/18/items/1963-jorge-ben-samba-esquema-novo/11%20-%20Menina%20Bonita%20Nao%20Chora.mp3
+Jorge Ben Por causa de você, menina | https://dn721803.ca.archive.org/0/items/1963-jorge-ben-samba-esquema-novo/12%20-%20Por%20Causa%20de%20Voce%2C%20Menina.mp3
 
