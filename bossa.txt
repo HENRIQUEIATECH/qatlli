@@ -6,7 +6,6 @@ Triste | https://www.jobim.org/jobim/bitstream/handle/2010/12787/Triste.mp3
 Corcovado | https://www.jobim.org/jobim/bitstream/handle/2010/12796/Corcovado.mp3
 O que tinha de ser | https://www.jobim.org/jobim/bitstream/handle/2010/12788/Oquetinhadeser.mp3
 Retrato em branco e preto | https://www.jobim.org/jobim/bitstream/handle/2010/12793/Retratoembrancoepreto.mp3
-
 Antonio Carloa Jobim | https://www.jobim.org/jobim/bitstream/handle/2010/12383/The%20Girl%20From%20Ipanema.mp3
 Garota de Ipanema The girl from Ipanema | https://www.jobim.org/jobim/bitstream/handle/2010/12383/The%20Girl%20From%20Ipanema.mp3
 Hino Ao Sol | https://www.jobim.org/jobim/bitstream/handle/2010/14586/05hinoaosol.mp3
@@ -42,9 +41,7 @@ Samba de uma nota só | https://www.jobim.org/jobim/bitstream/handle/2010/13157/
 Marina del Rey | https://www.jobim.org/jobim/bitstream/handle/2010/13160/Marina.mp3
 hovendo na roseira | https://www.jobim.org/jobim/bitstream/handle/2010/13165/Chovendoroseira.mp3
 Sabiá | https://www.jobim.org/jobim/bitstream/handle/2010/13172/SongoftheSabia.mp3
-
 Frank Sinatra | https://www.jobim.org/jobim/bitstream/handle/2010/12383/The%20Girl%20From%20Ipanema.mp3
-
 Chico Buarque | https://dn721208.ca.archive.org/0/items/1971-chico-buarque-construcao/08%20-%20Valsinha.mp3
 Deus lhe pague | https://dn721208.ca.archive.org/0/items/1971-chico-buarque-construcao/01%20-%20Deus%20lhe%20pague.mp3
 Cotidiano | https://dn721208.ca.archive.org/0/items/1971-chico-buarque-construcao/02%20-%20Cotidiano.mp3
@@ -56,7 +53,6 @@ Samba de Orly | https://dn721208.ca.archive.org/0/items/1971-chico-buarque-const
 Valsinha | https://dn721208.ca.archive.org/0/items/1971-chico-buarque-construcao/08%20-%20Valsinha.mp3
 Minha história Gesùbambino | https://dn721208.ca.archive.org/0/items/1971-chico-buarque-construcao/09%20-%20Minha%20historia%20%28Ges%C3%B9bambino%29.mp3
 Acalanto | https://dn721208.ca.archive.org/0/items/1971-chico-buarque-construcao/10%20-%20Acalanto.mp3
-
 Milton Nascimento | https://dn720303.ca.archive.org/0/items/Milton-Nascimento_Sentinela/media/user/SCRAPE/test/2021-10-milton-nascimento/extracted/Milton%20Nas/04%20Can%C3%A7%C3%A3o%20Da%20America.mp3
 Canção Da America | https://dn720303.ca.archive.org/0/items/Milton-Nascimento_Sentinela/media/user/SCRAPE/test/2021-10-milton-nascimento/extracted/Milton%20Nas/04%20Can%C3%A7%C3%A3o%20Da%20America.mp3
 
