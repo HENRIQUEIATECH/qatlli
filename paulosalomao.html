@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RBA Rádio Brasil Artes - O melhor da música brasileira, Bossa Nova e Sertanejo. Software de alta performance em JAVA por Paulo Salomão.">
+    <meta name="keywords" content="Rádio, Música Brasileira, Bossa Nova, JAVA, Software, Paulo Salomão">
+    <title>Paulo Salomão - RBA Rádio Brasil Artes</title>
+    <style>
+        /* Configurações Gerais */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: #ffffff; color: #333; overflow-x: hidden; scroll-behavior: smooth; }
+
+        /* Header Fixo */
+        header {
+            position: fixed;
+            top: 0; width: 100%;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        .logo-area { display: flex; align-items: center; color: #2d5a27; }
+        .logo-area img { height: 40px; margin-right: 12px; }
+        .logo-area h1 { font-size: 22px; }
+        
+        nav { display: flex; gap: 20px; }
+        nav a { text-decoration: none; color: #333; font-weight: 500; font-size: 14px; transition: 0.3s; }
+        nav a:hover { color: #2d5a27; }
+
+        /* Filetes Dourados Gradiente */
+        .gold-line {
+            height: 16px;
+            width: 100%;
+            background: linear-gradient(to right, #8B6B23 0%, #D4AF37 50%, #8B6B23 100%);
+        }
+        .spacer-gold { margin-top: 22px; }
+
+        /* Seções de Impacto */
+        .hero-rio {
+            margin-top: 60px;
+            height: 85vh;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%), 
+                        url('https://images.unsplash.com/photo-1516306580123-e6e52b1b7b5f?q=80&w=1226&auto=format&fit=crop') no-repeat center center/cover;
+            display: flex; align-items: center; justify-content: center; text-align: center; color: white; padding: 0 10%;
+        }
+        .hero-rio h2 { font-size: 3rem; text-shadow: 2px 2px 10px rgba(0,0,0,0.8); line-height: 1.2; }
+
+        .banner-grafite {
+            height: 60vh;
+            background-color: #36393F;
+            display: flex; align-items: center; justify-content: center; text-align: center; color: white; padding: 0 15%;
+        }
+        .banner-grafite blockquote { font-size: 2.2rem; font-style: italic; font-weight: 300; line-height: 1.4; }
+
+        /* Conteúdo RBA */
+        .section-rba { display: flex; padding: 80px 5%; align-items: center; background: #fff; gap: 40px; flex-wrap: wrap; }
+        .rba-text { flex: 2; min-width: 300px; }
+        .rba-text h2 { font-size: 2.5rem; color: #2d5a27; line-height: 1.2; margin-bottom: 20px; }
+        .asterisk { font-size: 4rem; color: #000000; vertical-align: middle; line-height: 0; }
+        
+        /* Container de Download */
+        .download-container { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 20px; text-align: center; min-width: 300px; }
+        .app-icon { width: 110px; height: 110px; border-radius: 24px; box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+        .download-buttons { display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 300px; }
+        
+        .btn-download { 
+            padding: 16px; border-radius: 8px; font-weight: bold; text-decoration: none; 
+            transition: 0.3s; display: block; text-align: center; font-size: 14px; letter-spacing: 0.5px;
+        }
+        .btn-android { background: #2d5a27; color: white; box-shadow: 0 4px 15px rgba(45, 90, 39, 0.3); }
+        .btn-ios { background: #333; color: white; }
+        .btn-download:hover { transform: translateY(-3px); opacity: 0.95; }
+
+        /* Seção História */
+        .historia { padding: 80px 10%; text-align: center; background: #fdfdfd; }
+        .historia h2 { font-size: 3.5rem; margin-bottom: 10px; color: #111; }
+        .einstein-quote { font-size: 1.1rem; color: #666; font-style: italic; margin-bottom: 50px; display: block; }
+        .grid-historia { text-align: left; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+
+        /* Formulário de Contato Estilizado */
+        .contato-section { padding: 80px 10%; background: #fff; text-align: center; }
+        .contato-section h2 { font-size: 2.5rem; color: #2d5a27; margin-bottom: 30px; }
+        .form-container { 
+            max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; 
+            background: #f9f9f9; padding: 40px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+        .form-container input, .form-container select, .form-container textarea {
+            padding: 14px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; width: 100%; outline: none; transition: 0.3s;
+        }
+        .form-container input:focus, .form-container select:focus, .form-container textarea:focus { border-color: #D4AF37; }
+        .form-container textarea { height: 150px; resize: none; }
+        .btn-enviar {
+            background: #2d5a27; color: white; padding: 16px; border: none; border-radius: 8px;
+            font-weight: bold; font-size: 1rem; cursor: pointer; transition: 0.3s;
+        }
+        .btn-enviar:hover { background: #1e3d1a; transform: translateY(-2px); }
+
+        footer { background: #111; color: #ccc; padding: 50px 5%; text-align: center; font-size: 0.9rem; }
+
+        /* Responsividade para Celulares */
+        @media (max-width: 768px) {
+            .grid-historia { grid-template-columns: 1fr; gap: 30px; }
+            .hero-rio h2 { font-size: 2rem; }
+            header { padding: 15px; }
+            nav { display: none; } /* Oculta menu em telas muito pequenas para focar no conteúdo */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <img src="logo.png" alt="Logo">
+            <h1>Paulo Salomão</h1>
+        </div>
+        <nav>
+            <a href="#">SoftWear</a>
+            <a href="#download">Download App</a>
+            <a href="#historia">Nossa História</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero-rio">
+        <h2>Sejam bem-vindos ao maravilhoso mundo encantado de RBA – Rádio Brasil Artes!</h2>
+    </section>
+
+    <div class="spacer-gold"></div>
+    <div class="gold-line"></div>
+
+    <section class="section-rba" id="download">
+        <div class="rba-text">
+            <h2>
+                <span class="asterisk">"</span> 
+                A empresa Paulo Salomão está contribuindo com a cultura brasileira e entregando gratuitamente os aplicativos RBA Rádio Brasil Artes
+                <span class="asterisk">"</span>
+            </h2>
+            <p>Um App para quem ama a música brasileira, bossa nova, sertanejo, podcast e a elevação dos valores musicais.</p>
+        </div>
+        
+        <div class="download-container">
+            <img src="icone-app.png" alt="Ícone RBA" class="app-icon">
+            <div class="download-buttons">
+                <a href="RBA.apk" download="RBA-Radio-Brasil-Artes.apk" class="btn-download btn-android">
+                    INSTALAR RBA ANDROID (.APK)
+                </a>
+                <a href="#contato" class="btn-download btn-ios">
+                    RBA PARA iOS (EM BREVE)
+                </a>
+            </div>
+            <div style="color: #666; font-size: 0.85rem;">
+                <p><strong>Versão Android: 5,1 MB</strong></p>
+                <p>✅ Arquivo seguro hospedado via GitHub.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="spacer-gold"></div>
+    <div class="gold-line"></div>
+
+    <section class="banner-grafite">
+        <blockquote>
+            "A música brasileira é o balanço da alma, o eco das florestas e o pulsar de um povo que transforma saudade em melodia."
+        </blockquote>
+    </section>
+
+    <div class="spacer-gold"></div>
+    <div class="gold-line"></div>
+
+    <section class="historia" id="historia">
+        <h2>Nossa História</h2>
+        <span class="einstein-quote">"A imaginação é mais importante que o conhecimento..." – Albert Einstein</span>
+        
+        <div class="grid-historia">
+            <div>
+                <p>Criamos <strong>SoftWear</strong> para todo tipo de necessidade, em alta programação em <strong>JAVA</strong> para aplicativos de estrutura e pequenos e grandes projetos, com design e arte integrados.</p>
+                <br>
+                <p>A RBA nasceu do desejo de resgatar e preservar a alma sonora do nosso país. Mais do que uma rádio, somos um museu vivo.</p>
+            </div>
+            <div>
+                <p>Os aplicativos RBA são gratuitos e sempre terá aumentado o repertório de áudios sem a necessidade de baixar outro novo aplicativo.</p>
+                <p style="margin-top: 15px;">Desenvolvido com excelência técnica para proporcionar a melhor experiência sonora.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato-section" id="contato">
+        <h2>Solicite um Orçamento de Software</h2>
+        <div class="form-container">
+            <input type="text" id="nomeCliente" placeholder="Seu Nome Completo" required>
+            <select id="tipoProjeto">
+                <option value="App Android (Java)">Aplicativo Android Nativo (Java)</option>
+                <option value="Sistema Web Corporativo">Sistema Web Corporativo</option>
+                <option value="Consultoria em Software">Consultoria Técnica</option>
+                <option value="Outros">Outros Projetos</option>
+            </select>
+            <textarea id="mensagemCliente" placeholder="Descreva brevemente sua necessidade ou projeto..."></textarea>
+            
+            <button type="button" onclick="processarOrcamento()" class="btn-enviar">
+                ENVIAR PROPOSTA POR E-MAIL
+            </button>
+        </div>
+    </section>
+
+    <script>
+        function processarOrcamento() {
+            const nome = document.getElementById('nomeCliente').value;
+            const projeto = document.getElementById('tipoProjeto').value;
+            const msg = document.getElementById('mensagemCliente').value;
+
+            if(nome === "" || msg === "") {
+                alert("Por favor, preencha todos os campos para que possamos te ajudar.");
+                return;
+            }
+
+            const emailDono = "contato@paulosalomao.com.br";
+            const assunto = `Solicitação de Software: ${projeto}`;
+            const corpo = `Olá Paulo Salomão,\n\nMeu nome é ${nome}.\n\nEstou interessado em um projeto de ${projeto}.\n\nDetalhes:\n${msg}`;
+
+            window.location.href = `mailto:${emailDono}?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(corpo)}`;
+        }
+    </script>
+
+    <footer>
+        <p>Direitos Autorais &copy; 2026 Paulo Salomão Agência de Criadores de Softwears em JAVA</p>
+    </footer>
+
+</body>
+</html>
