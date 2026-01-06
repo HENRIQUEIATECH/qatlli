@@ -1,680 +1,246 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8"></meta>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"></meta>
-    <title>QATLLI - Encantos da Lua</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RBA Rádio Brasil Artes - O melhor da música brasileira, Bossa Nova e Sertanejo. Software de alta performance em JAVA por Paulo Salomão.">
+    <meta name="keywords" content="Rádio, Música Brasileira, Bossa Nova, JAVA, Software, Paulo Salomão">
+    <title>Paulo Salomão - RBA Rádio Brasil Artes</title>
+    <link rel="icon" type="image/png" href="logo.png">
     <style>
-        :root {
-            --primary-green: #2d5a27;
-            --light-green: #e8f5e9;
-            --accent-green: #4caf50;
-            --text-dark: #2c3e50;
-            --bg-white: #ffffff;
-            --classic-serif: 'Georgia', 'Times New Roman', serif;
-        }
+        /* Configurações Gerais */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: #ffffff; color: #333; overflow-x: hidden; scroll-behavior: smooth; }
 
-        body {
-            font-family: 'Segoe UI', system-ui, sans-serif;
-            background-color: var(--bg-white);
-            color: var(--text-dark);
-            margin: 0;
-            padding: 40px 20px;
+        /* Header Fixo */
+        header {
+            position: fixed;
+            top: 0; width: 100%;
+            background: #fff;
             display: flex;
-            flex-direction: column;
             align-items: center;
+            justify-content: space-between;
+            padding: 15px 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
         }
-
-        .header-section { text-align: center; margin-bottom: 40px; }
-        h1 { font-weight: 300; letter-spacing: 8px; color: var(--primary-green); margin: 0; }
-        .welcome-text { font-style: italic; color: #666; margin-top: 5px; font-size: 1.1rem; }
-
-        .year-controls {
-            display: flex; align-items: center; justify-content: center;
-            gap: 20px; margin-top: 15px;
-        }
-
-        .nav-btn {
-            background: none; border: 1px solid var(--primary-green);
-            color: var(--primary-green); cursor: pointer;
-            padding: 5px 12px; border-radius: 20px; transition: 0.2s;
-        }
-        .nav-btn:hover { background: var(--primary-green); color: white; }
-
-        .year-container {
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 25px; max-width: 1200px; width: 100%; margin-bottom: 50px;
-        }
-        .month { background: #fdfdfd; padding: 15px; border-radius: 15px; border: 1px solid #f0f0f0; }
-        .month-name { font-weight: 600; color: var(--primary-green); text-align: center; text-transform: uppercase; margin-bottom: 5px; }
+        .logo-area { display: flex; align-items: center; color: #2d5a27; }
+        .logo-area img { height: 40px; margin-right: 12px; }
+        .logo-area h1 { font-size: 22px; }
         
-        .month-lunar-phases { 
-            display: flex; justify-content: space-around; 
-            font-size: 0.7rem; color: #777; margin-bottom: 12px; 
-            border-bottom: 1px solid #eee; padding-bottom: 8px; 
+        nav { display: flex; gap: 20px; align-items: center; }
+        nav a { text-decoration: none; color: #333; font-weight: 500; font-size: 14px; transition: 0.3s; }
+        nav a:hover { color: #2d5a27; }
+        .nav-whatsapp { color: #25d366 !important; font-weight: bold; }
+
+        /* Filetes Dourados Gradiente */
+        .gold-line {
+            height: 16px;
+            width: 100%;
+            background: linear-gradient(to right, #8B6B23 0%, #D4AF37 50%, #8B6B23 100%);
         }
+        .spacer-gold { margin-top: 22px; }
 
-        .days-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; font-size: 0.75rem; text-align: center; }
-        .day { padding: 5px; color: #888; cursor: pointer; border-radius: 50%; transition: 0.2s; }
-        .day:hover { background: var(--light-green); color: var(--primary-green); transform: scale(1.1); }
-        .today { background: var(--accent-green) !important; color: white !important; font-weight: bold; }
-
-        .modal-overlay {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.5); display: none; 
-            justify-content: center; align-items: center; z-index: 2000;
+        /* Seções de Impacto */
+        .hero-rio {
+            margin-top: 60px;
+            height: 85vh;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%), 
+                        url('https://images.unsplash.com/photo-1516306580123-e6e52b1b7b5f?q=80&w=1226&auto=format&fit=crop') no-repeat center center/cover;
+            display: flex; align-items: center; justify-content: center; text-align: center; color: white; padding: 0 10%;
         }
-        .modal-content {
-            background: white; padding: 40px; border-radius: 25px;
-            max-width: 450px; width: 90%; text-align: center;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
-            position: relative; animation: modalPop 0.3s ease-out;
+        .hero-rio h2 { font-size: 3rem; text-shadow: 2px 2px 10px rgba(0,0,0,0.8); line-height: 1.2; }
+
+        .banner-grafite {
+            height: 60vh;
+            background-color: #36393F;
+            display: flex; align-items: center; justify-content: center; text-align: center; color: white; padding: 0 15%;
         }
-        @keyframes modalPop { from { transform: scale(0.8); opacity: 0; } to { transform: scale(1); opacity: 1; } }
-        .close-modal { position: absolute; top: 20px; right: 25px; font-size: 1.5rem; cursor: pointer; color: #999; }
+        .banner-grafite blockquote { font-size: 2.2rem; font-style: italic; font-weight: 300; line-height: 1.4; }
 
-        .ia-section {
-            width: 100%; max-width: 600px; background: var(--light-green);
-            padding: 30px; border-radius: 24px; border: 1px solid #dceada;
-            margin-bottom: 60px; text-align: center;
+        /* Conteúdo RBA */
+        .section-rba { display: flex; padding: 80px 5%; align-items: center; background: #fff; gap: 40px; flex-wrap: wrap; }
+        .rba-text { flex: 2; min-width: 300px; }
+        .rba-text h2 { font-size: 2.5rem; color: #2d5a27; line-height: 1.2; margin-bottom: 20px; }
+        .asterisk { font-size: 4rem; color: #000000; vertical-align: middle; line-height: 0; }
+        
+        /* Container de Download */
+        .download-container { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 20px; text-align: center; min-width: 300px; }
+        .app-icon { width: 110px; height: 110px; border-radius: 24px; box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+        .download-buttons { display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 300px; }
+        
+        .btn-download { 
+            padding: 16px; border-radius: 8px; font-weight: bold; text-decoration: none; 
+            transition: 0.3s; display: block; text-align: center; font-size: 14px; letter-spacing: 0.5px;
         }
-        .ia-instruction { font-size: 1rem; color: var(--primary-green); margin-bottom: 15px; display: block; font-weight: 500; }
-        textarea {
-            width: 100%; height: 100px; border: 1.5px solid #c8d6c7;
-            border-radius: 12px; padding: 15px; font-size: 1rem;
-            box-sizing: border-box; outline: none; margin-bottom: 15px;
+        .btn-android { background: #2d5a27; color: white; box-shadow: 0 4px 15px rgba(45, 90, 39, 0.3); }
+        .btn-ios { background: #333; color: white; }
+        .btn-download:hover { transform: translateY(-3px); opacity: 0.95; }
+
+        /* Seção História */
+        .historia { padding: 80px 10%; text-align: center; background: #fdfdfd; }
+        .historia h2 { font-size: 3.5rem; margin-bottom: 10px; color: #111; }
+        .einstein-quote { font-size: 1.1rem; color: #666; font-style: italic; margin-bottom: 50px; display: block; }
+        .grid-historia { text-align: left; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+
+        /* Formulário de Contato */
+        .contato-section { padding: 80px 10%; background: #fff; text-align: center; }
+        .contato-section h2 { font-size: 2.5rem; color: #2d5a27; margin-bottom: 30px; }
+        .form-container { 
+            max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; 
+            background: #f9f9f9; padding: 40px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);
         }
-        #btn-ia {
-            width: 100%; background: var(--primary-green); color: white;
-            border: none; padding: 15px; border-radius: 12px;
-            cursor: pointer; font-weight: 600;
+        .form-container input, .form-container select, .form-container textarea {
+            padding: 14px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; width: 100%; outline: none; transition: 0.3s;
         }
+        .form-container input:focus, .form-container select:focus, .form-container textarea:focus { border-color: #D4AF37; }
+        .form-container textarea { height: 150px; resize: none; }
+        .btn-enviar {
+            background: #2d5a27; color: white; padding: 16px; border: none; border-radius: 8px;
+            font-weight: bold; font-size: 1rem; cursor: pointer; transition: 0.3s;
+        }
+        .btn-enviar:hover { background: #1e3d1a; transform: translateY(-2px); }
 
-        .moon-content { max-width: 800px; width: 100%; line-height: 1.8; color: #333; text-align: justify; }
-        .moon-content h2 { font-family: var(--classic-serif); font-size: 2.5rem; color: var(--primary-green); text-align: center; margin-bottom: 30px; border-bottom: 2px solid var(--light-green); padding-bottom: 10px; }
-        .topic-list { list-style: none; padding: 0; }
-        .topic-list li { margin-bottom: 25px; padding-left: 20px; border-left: 3px solid var(--accent-green); }
-        .topic-title { font-weight: bold; display: block; font-size: 1.1rem; color: var(--primary-green); margin-bottom: 5px; }
-      
-      
-      
-.slider-container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 60px auto;
-    text-align: center;
-}
+        footer { background: #111; color: #ccc; padding: 50px 5%; text-align: center; font-size: 0.9rem; margin-bottom: 0; }
 
-/* Container centralizador dos cards */
-.slider-track {
-    display: flex;
-    flex-wrap: wrap; /* Permite quebrar linha em telas pequenas */
-    justify-content: center; /* Centraliza os cards horizontalmente */
-    gap: 25px;
-    padding: 20px;
-}
-
-.slide-card {
-    width: 260px; /* Largura fixa para manter a simetria */
-    height: 380px;
-    background: #fff;
-    border-radius: 20px;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    text-decoration: none;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border: 1px solid #f0f0f0;
-}
-
-.slide-card:hover { 
-    transform: translateY(-15px); 
-    box-shadow: 0 20px 40px rgba(45, 90, 39, 0.15);
-}
-
-.slide-img {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    filter: brightness(0.9);
-    transition: 0.5s;
-}
-
-.slide-card:hover .slide-img {
-    filter: brightness(1.1);
-    transform: scale(1.05);
-}
-
-.slide-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background: linear-gradient(transparent, rgba(45, 90, 39, 0.95)); /* Degradê elegante */
-    color: white;
-    padding: 25px 15px;
-    text-align: center;
-    font-size: 0.9rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-
-.mathematician-quote {
-    max-width: 650px;
-    margin: 0 auto 30px;
-    padding: 0 20px;
-}
-
-.mathematician-quote p {
-    font-size: 1.1rem;
-    color: #555;
-    font-style: italic;
-    line-height: 1.6;
-}
-
-.mathematician-quote small {
-    display: block;
-    margin-top: 10px;
-    color: var(--primary-green);
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}    
-
-
-
-
-
-</style>
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .grid-historia { grid-template-columns: 1fr; gap: 30px; }
+            .hero-rio h2 { font-size: 2rem; }
+            header { padding: 15px; }
+            nav { display: none; }
+        }
+    </style>
 </head>
 <body>
 
-
-  
-  
-    <div class="header-section">
-        <h1>QATLLI</h1>
-        <div class="welcome-text">Bem-vindo aos Encantos da Lua</div>
-     <p><i> "O QATLLI é uma fusão entre o céu e a alma. Um espaço onde a precisão da astronomia encontra a sensibilidade da literatura, mediadas por uma inteligência artificial que entende não apenas os ciclos da lua, mas os ciclos do sentimento humano."</i></p>
-      
-        <div class="welcome-text">Clique em um dia para ver o Oráculo</div>
-      
-      
-      
-        <div class="year-controls">
-            <button class="nav-btn" onclick="changeYear(-1)">←</button>
-            <span id="year-display" style="font-size: 1.5rem; font-weight: bold;">2026</span>
-            <button class="nav-btn" onclick="changeYear(1)">→</button>
+    <header>
+        <div class="logo-area">
+            <img src="logo.png" alt="Logo">
+            <h1>Paulo Salomão</h1>
         </div>
-    </div>
+        <nav>
+            <a href="#">SoftWear</a>
+            <a href="#download">Download App</a>
+            <a href="#historia">Nossa História</a>
+            <a href="#contato">Contato</a>
+            <a href="https://wa.me/5564992962999" class="nav-whatsapp" target="_blank">WhatsApp</a>
+        </nav>
+    </header>
 
-    <div class="year-container" id="calendar"></div>
+    <section class="hero-rio">
+        <h2>Sejam bem-vindos ao maravilhoso mundo encantado de RBA – Rádio Brasil Artes!</h2>
+    </section>
 
-    <div class="modal-overlay" id="modal-lunar" onclick="fecharModal(event)">
-        <div class="modal-content" onclick="event.stopPropagation()">
-            <span class="close-modal" onclick="document.getElementById('modal-lunar').style.display='none'">×</span>
-            <h2 id="modal-data" style="color: var(--primary-green); font-family: var(--classic-serif); margin-bottom: 10px;"></h2>
-            <div id="modal-icone" style="font-size: 4rem; margin: 20px 0;"></div>
-            <h3 id="modal-fase-nome" style="color: var(--accent-green); margin: 0;"></h3>
-            <p id="modal-conselho" style="color: #555555; font-size: 1.1rem; font-style: italic; line-height: 1.6; margin-top: 20px;"></p>
+    <div class="spacer-gold"></div>
+    <div class="gold-line"></div>
+
+    <section class="section-rba" id="download">
+        <div class="rba-text">
+            <h2>
+                <span class="asterisk">"</span> 
+                A empresa Paulo Salomão está contribuindo com a cultura brasileira e entregando gratuitamente os aplicativos RBA Rádio Brasil Artes
+                <span class="asterisk">"</span>
+            </h2>
+            <p>Um App para quem ama a música brasileira, bossa nova, sertanejo, podcast e a elevação dos valores musicais.</p>
         </div>
-    </div>
-<center>
-    <div class="ia-section">
-        <span class="ia-instruction">Escreva o que você está sentindo hoje, e terá uma pequena análise deste seu sentimento: IA QATLLI</span>
-        <textarea disabled="" id="texto-ia" placeholder="Relate seus pensamentos..."></textarea>
-        <button disabled="" id="btn-ia" onclick="analisar()">Iniciando Motor Multilíngue...</button>
-        <div id="resultado" style="background: white; border-left: 4px solid var(--primary-green); border-radius: 10px; display: none; margin-top: 15px; padding: 15px; text-align: left;"></div>
-    </div>
-
-  
-  
-  <style>
-    .impactful-themes {
-        width: 100%;
-        max-width: 800px;
-        margin-bottom: 60px;
-    }
-    .themes-title {
-        font-family: var(--classic-serif);
-        font-size: 2rem;
-        color: var(--primary-green);
-        text-align: center;
-        margin-bottom: 30px;
-    }
-    .eclipse-card {
-        background: #fff;
-        border: 1px solid #eee;
-        border-radius: 15px;
-        padding: 20px;
-        margin-bottom: 15px;
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        transition: 0.3s;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    }
-    .eclipse-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
-    .eclipse-date {
-        background: var(--primary-green);
-        color: white;
-        padding: 10px;
-        border-radius: 10px;
-        min-width: 100px;
-        text-align: center;
-        font-weight: bold;
-    }
-    .eclipse-info h4 { margin: 0 0 5px 0; color: var(--primary-green); }
-    .eclipse-info p { margin: 0; font-size: 0.9rem; color: #666; }
-    .nasa-link {
-        margin-left: auto;
-        text-decoration: none;
-        color: var(--accent-green);
-        font-weight: bold;
-        font-size: 0.8rem;
-        border: 1px solid var(--accent-green);
-        padding: 5px 10px;
-        border-radius: 5px;
-        transition: 0.2s;
-    }
-    .nasa-link:hover { background: var(--accent-green); color: white; }
-</style>
-
-<div class="impactful-themes">
-    <h3 class="themes-title">Temas Impactantes da Lua</h3>
-    
-    <div class="eclipse-card">
-        <div class="eclipse-date">14 MAR<br />2025</div>
-        <div class="eclipse-info">
-            <h4>Eclipse Lunar Total</h4>
-            <p><strong>Fato:</strong> Conhecida como "Lua de Sangue", a Lua atravessa a sombra total da Terra, adquirindo um tom avermelhado dramático. Será visível em todas as Américas.</p>
-        </div>
-        <a class="nasa-link" href="https://eclipse.gsfc.nasa.gov/lunar.html" target="_blank">DADOS NASA</a>
-    </div>
-
-    <div class="eclipse-card">
-        <div class="eclipse-date">07 SET<br />2025</div>
-        <div class="eclipse-info">
-            <h4>Eclipse Lunar Total</h4>
-            <p><strong>Fato:</strong> Um eclipse excepcionalmente profundo onde a Lua passará quase exatamente pelo centro da sombra da Terra, resultando em uma escuridão intensa.</p>
-        </div>
-        <a class="nasa-link" href="https://eclipse.gsfc.nasa.gov/lunar.html" target="_blank">DADOS NASA</a>
-    </div>
-
-    <div class="eclipse-card">
-        <div class="eclipse-date">03 MAR<br />2026</div>
-        <div class="eclipse-info">
-            <h4>Eclipse Lunar Total</h4>
-            <p><strong>Fato:</strong> Este evento marca o início de uma série de eclipses que serão visíveis em grandes partes da Europa e África, além das Américas.</p>
-        </div>
-        <a class="nasa-link" href="https://eclipse.gsfc.nasa.gov/lunar.html" target="_blank">DADOS NASA</a>
-    </div>
-</div>
-  
-  <center>
-  <div class="slider-container">
-    <div class="mathematician-quote">
-        <p>"A Geometria existia antes da Criação. Ela é co-eterna com a mente de Deus... a Geometria forneceu a Deus um modelo para a Criação."</p>
-        <small>— Johannes Kepler, Matemático e Astrônomo</small>
-    </div>
-
-    <div class="slider-track" id="sliderTrack">
-        <a class="slide-card" href="https://henriqueiatech.github.io/qatlli/orbitasmatematica.html">
-            <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1532693322450-2cb5c511067d?auto=format&amp;fit=crop&amp;w=600&amp;q=80');"></div>
-            <div class="slide-footer">Órbitas Matemáticas</div>
-        </a>
-
-        <a class="slide-card" href="https://henriqueiatech.github.io/qatlli/aproporcaoaurea.html">
-            <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&amp;fit=crop&amp;w=600&amp;q=80');"></div>
-            <div class="slide-footer">A Proporção Áurea</div>
-        </a>
-
-        <a class="slide-card" href="https://henriqueiatech.github.io/qatlli/geometriadecrateras.html">
-            <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&amp;fit=crop&amp;w=350&amp;q=40');"></div>
-            <div class="slide-footer">Geometria de Crateras</div>
-        </a>
-
-        <a class="slide-card" href="https://henriqueiatech.github.io/qatlli/simetriadasmares.html">
-            <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=350&amp;q=40');"></div>
-            <div class="slide-footer">Simetria das Marés</div>
-        </a>
-
-    </div>
-</div>
-  </center>
-  
-  <style>
-    .literature-section {
-        width: 100%;
-        max-width: 800px;
-        margin-bottom: 60px;
-    }
-    .lit-category {
-        margin-top: 30px;
-        border-top: 1px solid var(--light-green);
-        padding-top: 20px;
-    }
-    .lit-category h4 {
-        color: var(--accent-green);
-        text-transform: uppercase;
-        font-size: 0.9rem;
-        letter-spacing: 2px;
-        margin-bottom: 20px;
-    }
-    .book-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-    }
-    .book-card {
-        background: #fcfcfc;
-        padding: 20px;
-        border-radius: 12px;
-        border-left: 4px solid var(--primary-green);
-    }
-    .book-title {
-        font-weight: bold;
-        color: var(--primary-green);
-        display: block;
-        margin-bottom: 5px;
-    }
-    .book-desc {
-        font-size: 0.85rem;
-        line-height: 1.5;
-        color: #555;
-    }
-    .anthropology-highlight {
-        background: var(--light-green);
-        padding: 25px;
-        border-radius: 15px;
-        margin-top: 30px;
-        text-align: center;
-    }
-</style>
-
-<div class="literature-section">
-    <h3 class="themes-title">A Lua na Literatura</h3>
-    
-    <div class="lit-category">
-        <h4>Ficção Científica e Aventura</h4>
-        <div class="book-grid">
-            <div class="book-card">
-                <span class="book-title">Da Terra à Lua (Júlio Verne, 1865)</span>
-                <p class="book-desc">Um marco pioneiro que narra a tentativa de um clube de atirar um projétil à Lua, com uma precisão científica surpreendente para a época.</p>
-            </div>
-            <div class="book-card">
-                <span class="book-title">Tintim na Lua (Hergé)</span>
-                <p class="book-desc">Clássico dos quadrinhos que explorou a ida à Lua com aventura e teorias antecipadas aos anos 50.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="lit-category">
-        <h4>Literatura Infantil e Poesia</h4>
-        <div class="book-grid">
-            <div class="book-card">
-                <span class="book-title">Qual o Sabor da Lua? (Michael Grejniec)</span>
-                <p class="book-desc">Uma fábula poética sobre animais que se unem para tentar alcançar e provar um pequeno pedaço da Lua.</p>
-            </div>
-            <div class="book-card">
-                <span class="book-title">Dia de Lua (Renato Moricone)</span>
-                <p class="book-desc">Uma obra visualmente rica que imagina as atividades da Lua quando ela não está iluminando o nosso céu noturno.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="anthropology-highlight">
-        <span class="book-title">A Outra Face da Lua (Claude Lévi-Strauss)</span>
-        <p class="book-desc" style="font-style: italic;">"Nesta obra, o mestre da antropologia explora como a Lua moldou mitos e a organização de diferentes culturas, revelando seu papel como espelho da humanidade."</p>
-    </div>
-</div>
-  
-  
-  
-    <div class="moon-content">
-        <h2>A Lua e suas Influências</h2>
-        <p>
-            Desde o início dos tempos, a Lua tem sido a sentinela silenciosa da Terra, exercendo um fascínio inigualável sobre a humanidade. 
-            Muito mais do que um simples satélite natural, ela é o motor das marés, o guia dos calendários antigos e uma fonte constante de 
-            inspiração poética e mística.
-        </p>
-
-        <ul class="topic-list">
-            <li>
-                <span class="topic-title">História da Lua</span>
-                A teoria mais aceita, a "Hipótese do Grande Impacto", sugere que a Lua nasceu há 4,5 bilhões de anos, quando um corpo do tamanho de Marte colidiu com a Terra jovem. Desde então, ela estabiliza a inclinação do nosso planeta, permitindo a existência das estações do ano e um clima propício à vida.
-            </li>
-            <li>
-                <span class="topic-title">Vibrações e Energias</span>
-                Na metafísica, cada fase lunar carrega uma vibração: a Lua Nova é o plantio de intenções; a Crescente é o desenvolvimento; a Cheia é o ápice e a clareza; e a Minguante é a introspecção e o desapego.
-            </li>
-            <li>
-                <span class="topic-title">Influência na Agricultura</span>
-                Agricultores de todo o mundo observam a Lua para o plantio. Acredita-se que a Lua Crescente favorece plantas que crescem para cima (folhas e frutos), enquanto a Minguante é ideal para raízes e podas, pois a seiva se concentra na parte inferior da planta.
-            </li>
-            <li>
-                <span class="topic-title">O Ritmo das Marés</span>
-                A gravidade lunar puxa as massas de água dos oceanos, criando o fluxo e refluxo das marés. Este ciclo é vital para a ecologia marinha, regulando a alimentação e reprodução de milhares de espécies.
-                
-            </li>
-            <li>
-                <span class="topic-title">A Mulher e o Homem</span>
-                Historicamente, o ciclo lunar de 29,5 dias é associado ao ciclo biológico feminino, simbolizando fertilidade e renovação. Nos homens, estudos sugerem que as fases lunares podem influenciar sutilmente a qualidade do sono e os níveis de melatonina, afetando o humor e a disposição.
-            </li>
-            <li>
-                <span class="topic-title">Fatos Marcantes</span>
-                Desde as primeiras observações de Galileu em 1609 até o histórico "pequeno passo" de Neil Armstrong em 1969, a Lua foi o primeiro corpo celeste a ser tocado pelo homem, expandindo os limites da nossa existência para além da atmosfera terrestre.
-            </li>
-        </ul>
-    </div>
-</center>
-  <footer class="site-footer">
-    <div class="footer-content">
-        <p>© 2025 QATLLI - Encantos da Lua. Todos os direitos reservados.</p>
-        <p>Dados astronômicos baseados em algoritmos de precisão J2000. Referências de eclipses via NASA Goddard Space Flight Center.</p>
-      <p>Criada em 27 de dezembro de 2025<p>
-        <div class="footer-links">
-            <a href="#">Sobre o Projeto</a> | 
-            <a href="#">Privacidade</a> | 
-            <a href="#">Fontes Literárias</a>
-        </div>
-        <p style="margin-top: 10px; opacity: 0.7;">Desenvolvido com paixão por Astronomia e Literatura.</p>
-      <p><i> "O QATLLI é uma fusão entre o céu e a alma. Um espaço onde a precisão da astronomia encontra a sensibilidade da literatura, mediadas por uma inteligência artificial que entende não apenas os ciclos da lua, mas os ciclos do sentimento humano."</i></p>
-    </p></p></div>
-</footer>
-
-<style>
-    .site-footer {
-        width: 100%;
-        background-color: #f9f9f9;
-        padding: 30px 20px;
-        margin-top: 80px;
-        border-top: 1px solid #eee;
-        text-align: center;
-    }
-    .footer-content {
-        max-width: 800px;
-        margin: 0 auto;
-        font-size: 0.75rem; /* Letras pequenas */
-        color: #888;
-        line-height: 1.6;
-    }
-    .footer-links {
-        margin: 10px 0;
-    }
-    .footer-links a {
-        color: var(--primary-green);
-        text-decoration: none;
-        margin: 0 5px;
-        transition: 0.2s;
-    }
-    .footer-links a:hover {
-        text-decoration: underline;
-        color: var(--accent-green);
-    }
-</style>
-  
-  
-  
-  
-    <script type="module">
-    import { pipeline } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers@2.6.0';
-
-    let classifier;
-    let currentYear = 2026;
-    const monthsNames = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
-
-    // --- LÓGICA ASTRONÔMICA (PRECISÃO J2000) ---
-    function calculateMoonPhase(date) {
-        const year = date.getFullYear();
-        const month = date.getMonth() + 1;
-        const day = date.getDate();
         
-        let y = year, m = month;
-        if (m <= 2) { y -= 1; m += 12; }
-        let a = Math.floor(y / 100);
-        let b = 2 - a + Math.floor(a / 4);
-        let jd = Math.floor(365.25 * (y + 4716)) + Math.floor(30.6001 * (m + 1)) + day + b - 1524.5;
+        <div class="download-container">
+            <img src="icone-app.png" alt="Ícone RBA" class="app-icon">
+            <div class="download-buttons">
+                <a href="RBA.apk" download="RBA-Radio-Brasil-Artes.apk" class="btn-download btn-android">
+                    INSTALAR RBA ANDROID (.APK)
+                </a>
+                <a href="https://wa.me/5564992962999?text=Olá!%20Tenho%20interesse%20na%20versão%20iOS%20da%20RBA." class="btn-download btn-ios" target="_blank">
+                    RBA PARA iOS (EM BREVE)
+                </a>
+            </div>
+            <div style="color: #666; font-size: 0.85rem;">
+                <p><strong>Versão Android: 5,1 MB</strong></p>
+                <p>✅ Arquivo seguro hospedado via GitHub.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="spacer-gold"></div>
+    <div class="gold-line"></div>
+
+    <section class="banner-grafite">
+        <blockquote>
+            "A música brasileira é o balanço da alma, o eco das florestas e o pulsar de um povo que transforma saudade em melodia."
+        </blockquote>
+    </section>
+
+    <div class="spacer-gold"></div>
+    <div class="gold-line"></div>
+
+    <section class="historia" id="historia">
+        <h2>Nossa História</h2>
+        <span class="einstein-quote">"A imaginação é mais importante que o conhecimento..." – Albert Einstein</span>
         
-        const daysSinceJ2000 = jd - 2451549.5;
-        const newMoons = daysSinceJ2000 / 29.530588853;
-        const phase = (newMoons - Math.floor(newMoons)) * 29.53;
-        
-        if (phase < 1.0 || phase > 28.5) return { nome: "Lua Nova", icone: "🌑", conselho: "Momento de introspecção e novos começos." };
-        if (phase < 6.3) return { nome: "Lua Crescente", icone: "🌒", conselho: "Dê corpo aos seus planos." };
-        if (phase < 8.3) return { nome: "Quarto Crescente", icone: "🌓", conselho: "Aja com firmeza e determinação." };
-        if (phase < 13.7) return { nome: "Crescente Gibosa", icone: "🌔", conselho: "Aperfeiçoe seus métodos e detalhes." };
-        if (phase < 15.8) return { nome: "Lua Cheia", icone: "🌕", conselho: "Clareza total, celebração e exposição." };
-        if (phase < 21.1) return { nome: "Minguante Gibosa", icone: "🌖", conselho: "Avalie resultados e compartilhe sabedoria." };
-        if (phase < 23.1) return { nome: "Quarto Minguante", icone: "🌗", conselho: "Solte o que não serve mais. Limpeza." };
-        return { nome: "Lua Minguante", icone: "🌘", conselho: "Descanso profundo e silêncio mental." };
-    }
+        <div class="grid-historia">
+            <div>
+                <p>Criamos <strong>SoftWear</strong> para todo tipo de necessidade, em alta programação em <strong>JAVA</strong> para aplicativos de estrutura e pequenos e grandes projetos, com design e arte integrados.</p>
+                <br>
+                <p>A RBA nasceu do desejo de resgatar e preservar a alma sonora do nosso país. Mais do que uma rádio, somos um museu vivo.</p>
+            </div>
+            <div>
+                <p>Os aplicativos RBA são gratuitos e sempre terá aumentado o repertório de áudios sem a necessidade de baixar outro novo aplicativo.</p>
+                <p style="margin-top: 15px;">Desenvolvido com excelência técnica para proporcionar a melhor experiência sonora.</p>
+            </div>
+        </div>
+    </section>
 
-    // --- GERENCIAMENTO DO CALENDÁRIO ---
-    function getLunarPhasesForMonthHeader(year, month) {
-        let phases = { "🌑": null, "🌓": null, "🌕": null, "🌗": null };
-        for (let d = 1; d <= 31; d++) {
-            let dObj = new Date(year, month, d);
-            if (dObj.getMonth() !== month) break;
-            let p = calculateMoonPhase(dObj);
-            if (!phases["🌑"] && p.nome === "Lua Nova") phases["🌑"] = d;
-            if (!phases["🌓"] && p.nome === "Quarto Crescente") phases["🌓"] = d;
-            if (!phases["🌕"] && p.nome === "Lua Cheia") phases["🌕"] = d;
-            if (!phases["🌗"] && p.nome === "Quarto Minguante") phases["🌗"] = d;
-        }
-        return phases;
-    }
+    <section class="contato-section" id="contato">
+        <h2>Solicite um Orçamento de Software</h2>
+        <div class="form-container">
+            <input type="text" id="nomeCliente" placeholder="Seu Nome Completo" required>
+            <select id="tipoProjeto">
+                <option value="App Android (Java)">Aplicativo Android Nativo (Java)</option>
+                <option value="Sistema Web Corporativo">Sistema Web Corporativo</option>
+                <option value="Consultoria em Software">Consultoria Técnica</option>
+                <option value="Outros">Outros Projetos</option>
+            </select>
+            <textarea id="mensagemCliente" placeholder="Descreva brevemente sua necessidade ou projeto..."></textarea>
+            
+            <button type="button" onclick="processarOrcamento()" class="btn-enviar">
+                ENVIAR PROPOSTA POR E-MAIL
+            </button>
+        </div>
+    </section>
 
-    window.verDia = (d, m, y) => {
-        const data = new Date(y, m, d);
-        const info = calculateMoonPhase(data);
-        document.getElementById('modal-data').innerText = `${d} de ${monthsNames[m]}`;
-        document.getElementById('modal-icone').innerText = info.icone;
-        document.getElementById('modal-fase-nome').innerText = info.nome;
-        document.getElementById('modal-conselho').innerText = info.conselho;
-        document.getElementById('modal-lunar').style.display = 'flex';
-    };
+    <footer>
+        <p>Direitos Autorais &copy; 2026 Paulo Salomão Agência de Criadores de Softwears em JAVA</p>
+        <p>RBA Rádio Brasil Artes</p>
+        <p>CEO Cientista da Computação Paulo Salomao</p>
+    </footer>
 
-    window.fecharModal = () => { document.getElementById('modal-lunar').style.display = 'none'; }
+    <a href="https://wa.me/5564992962999?text=Olá%20Paulo,%20vi%20seu%20site%20e%20gostaria%20de%20falar%20sobre%20um%20projeto%20JAVA." 
+       style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 10px rgba(0,0,0,0.3);z-index:1000;display:flex;align-items:center;justify-content:center;text-decoration:none;" 
+       target="_blank">
+        <svg fill="currentColor" width="35" height="35" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.067 2.877 1.216 3.075.149.198 2.095 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
 
-    function createCalendar(year) {
-        const container = document.getElementById('calendar');
-        container.innerHTML = '';
-        const hoje = new Date();
-        monthsNames.forEach((name, index) => {
-            const monthDiv = document.createElement('div');
-            monthDiv.className = 'month';
-            let html = `<div class="month-name">${name}</div>`;
-            const phases = getLunarPhasesForMonthHeader(year, index);
-            html += `<div class="month-lunar-phases">`;
-            if(phases["🌑"]) html += `<span>🌑 ${phases["🌑"]}</span>`;
-            if(phases["🌓"]) html += `<span>🌓 ${phases["🌓"]}</span>`;
-            if(phases["🌕"]) html += `<span>🌕 ${phases["🌕"]}</span>`;
-            if(phases["🌗"]) html += `<span>🌗 ${phases["🌗"]}</span>`;
-            html += `</div><div class="days-grid">`;
-            const daysInMonth = new Date(year, index + 1, 0).getDate();
-            for(let d = 1; d <= daysInMonth; d++) {
-                const isToday = hoje.getFullYear() === year && hoje.getMonth() === index && hoje.getDate() === d;
-                html += `<div class="day ${isToday ? 'today' : ''}" onclick="verDia(${d}, ${index}, ${year})">${d}</div>`;
+    <script>
+        function processarOrcamento() {
+            const nome = document.getElementById('nomeCliente').value;
+            const projeto = document.getElementById('tipoProjeto').value;
+            const msg = document.getElementById('mensagemCliente').value;
+
+            if(nome === "" || msg === "") {
+                alert("Por favor, preencha todos os campos para que possamos te ajudar.");
+                return;
             }
-            html += `</div>`;
-            monthDiv.innerHTML = html;
-            container.appendChild(monthDiv);
-        });
-    }
 
-    window.changeYear = (delta) => {
-        currentYear += delta;
-        document.getElementById('year-display').innerText = currentYear;
-        createCalendar(currentYear);
-    };
+            const emailDono = "paulodallas63@gmail.com";
+            const assunto = `Solicitação de Software: ${projeto}`;
+            const corpo = `Olá Paulo Salomão,\n\nMeu nome é ${nome}.\n\nEstou interessado em um projeto de ${projeto}.\n\nDetalhes:\n${msg}`;
 
-    // --- LÓGICA DA INTELIGÊNCIA ARTIFICIAL QATLLI ---
-    async function init() {
-        createCalendar(currentYear);
-        try {
-            // Carregando o modelo Multilíngue
-            classifier = await pipeline('sentiment-analysis', 'Xenova/bert-base-multilingual-uncased-sentiment');
-            document.getElementById('texto-ia').disabled = false;
-            const btn = document.getElementById('btn-ia');
-            btn.disabled = false;
-            btn.innerText = "Analisar com QATLLI";
-        } catch (e) { 
-            console.error("Erro ao carregar IA:", e);
-            document.getElementById('btn-ia').innerText = "Erro ao carregar motor de IA";
+            window.location.href = `mailto:${emailDono}?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(corpo)}`;
         }
-    }
+    </script>
 
-    window.analisar = async () => {
-        const input = document.getElementById('texto-ia');
-        const resDiv = document.getElementById('resultado');
-        if(!input.value) return;
-
-        resDiv.style.display = 'block';
-        resDiv.style.borderLeft = "4px solid var(--primary-green)";
-        resDiv.innerHTML = "<em>Sintonizando com as energias e folheando os clássicos...</em>";
-
-        const result = await classifier(input.value);
-        const score = parseInt(result[0].label.split(' ')[0]); 
-        
-        let vibe = "";
-        let recomendacao = "";
-        let livro = "";
-
-        // Lógica de Curadoria Literária baseada no sentimento
-        if (score >= 4) {
-            vibe = "Serena e Harmoniosa";
-            livro = "<strong>Qual o Sabor da Lua? (Michael Grejniec)</strong>";
-            recomendacao = `Sua energia está radiante e leve. Que tal manter essa doçura com esta fábula poética sobre união e descoberta?`;
-        } else if (score === 3) {
-            vibe = "Equilibrada e Curiosa";
-            livro = "<strong>Da Terra à Lua (Júlio Verne)</strong>";
-            recomendacao = `Você parece estar em um momento de busca e estabilidade. A mente visionária de Verne é a companhia ideal para expandir seus horizontes hoje.`;
-        } else {
-            vibe = "Profunda e Reflexiva";
-            livro = "<strong>A Outra Face da Lua (Claude Lévi-Strauss)</strong>";
-            recomendacao = `Sentimentos densos pedem um olhar mais profundo. Mergulhe nos mitos e na cultura para entender as diversas faces da alma humana através do tempo.`;
-        }
-
-        // Se o texto for uma pergunta curta ou demonstrar muita curiosidade
-        if (input.value.includes('?') || (input.value.length < 30 && score >= 3)) {
-            vibe = "Exploradora e Aventureira";
-            livro = "<strong>Tintim na Lua (Hergé)</strong>";
-            recomendacao = `Sua curiosidade está aguçada! Uma aventura clássica, visual e cheia de descobertas é o que o seu espírito pede agora.`;
-        }
-
-        resDiv.innerHTML = `
-            <div style="margin-bottom: 10px;"><strong>QATLLI identifica:</strong> Energia <u>${vibe}</u>.</div>
-            <div style="font-size: 0.95rem; color: #444; border-top: 1px solid #eee; margin-top: 10px; padding-top: 10px;">
-                <span style="color: var(--primary-green); font-weight: bold;">Sugestão Literária do Oráculo:</span><br>
-                ${recomendacao}<br><br>
-                📖 ${livro}
-            </div>
-        `;
-    }
-
-    // Inicializa tudo ao carregar a página
-    init();
-</script>
 </body>
 </html>
