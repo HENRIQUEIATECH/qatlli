@@ -67,6 +67,14 @@ Minha história Gesùbambino | https://dn721208.ca.archive.org/0/items/1971-chic
 Acalanto | https://dn721208.ca.archive.org/0/items/1971-chico-buarque-construcao/10%20-%20Acalanto.mp3
 Milton Nascimento | https://dn720303.ca.archive.org/0/items/Milton-Nascimento_Sentinela/media/user/SCRAPE/test/2021-10-milton-nascimento/extracted/Milton%20Nas/04%20Can%C3%A7%C3%A3o%20Da%20America.mp3
 Canção Da America | https://dn720303.ca.archive.org/0/items/Milton-Nascimento_Sentinela/media/user/SCRAPE/test/2021-10-milton-nascimento/extracted/Milton%20Nas/04%20Can%C3%A7%C3%A3o%20Da%20America.mp3
+Zé Ramalho Avôhai | https://dn721306.ca.archive.org/0/items/1978-ze-ramalho/01%20Av%C3%B4hai.mp3 
+Zé Ramalho Vila Do Sossego | https://dn721306.ca.archive.org/0/items/1978-ze-ramalho/02%20Vila%20Do%20Sossego.mp3
+Zé Ramalho Chão De Giz | https://ia800906.us.archive.org/24/items/1978-ze-ramalho/03%20Ch%C3%A3o%20De%20Giz.mp3
+Zé Ramalho A Noite Preta | https://dn721306.ca.archive.org/0/items/1978-ze-ramalho/04%20A%20Noite%20Preta.mp3
+Zé Ramalho A Dança Das Borboletas | https://ia600906.us.archive.org/24/items/1978-ze-ramalho/05%20A%20Dan%C3%A7a%20Das%20Borboletas.mp3
+Zé Ramalho Bicho De 7 Cabeças | https://dn721306.ca.archive.org/0/items/1978-ze-ramalho/06%20Bicho%20De%207%20Cabe%C3%A7as.mp3
+Zé Ramalho Adeus Segunda-Feira Cinzenta | https://dn721306.ca.archive.org/0/items/1978-ze-ramalho/07%20Adeus%20Segunda-Feira%20Cinzenta.mp3
+Zé Ramalho Meninas De Albarã | https://dn721306.ca.archive.org/0/items/1978-ze-ramalho/08%20Meninas%20De%20Albar%C3%A3.mp3
 Caetano Veloso Tropicália | https://ia800706.us.archive.org/8/items/1968-caetano-veloso_202504/01%20Tropic%C3%A1lia.mp3
 Caetano Veloso Clarice | https://dn721904.ca.archive.org/0/items/1968-caetano-veloso_202504/02%20Clarice.mp3
 Caetano Veloso No dia em que vim-me embora | https://dn721904.ca.archive.org/0/items/1968-caetano-veloso_202504/03%20No%20dia%20em%20que%20vim-me%20embora.mp3
@@ -103,4 +111,4 @@ Jorge Ben Ualá, Ualalá | https://dn721803.ca.archive.org/0/items/1963-jorge-be
 Jorge Ben A tamba | https://dn721803.ca.archive.org/0/items/1963-jorge-ben-samba-esquema-novo/10%20-%20A%20Tamba.mp3
 Jorge Ben Menina bonita não chora | https://ia801308.us.archive.org/18/items/1963-jorge-ben-samba-esquema-novo/11%20-%20Menina%20Bonita%20Nao%20Chora.mp3
 Jorge Ben Por causa de você, menina | https://dn721803.ca.archive.org/0/items/1963-jorge-ben-samba-esquema-novo/12%20-%20Por%20Causa%20de%20Voce%2C%20Menina.mp3
-
+João Bosco Bijuterias | https://dn710008.ca.archive.org/0/items/01-um-jeito-estupido-de-te-amar-maria-bethania/07-%20Bijuterias%20%28Abertura%29%20Jo%C3%A2o%20Bosco.mp3
