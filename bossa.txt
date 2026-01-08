@@ -41,6 +41,7 @@ Tom Jobim Samba de uma nota só | https://www.jobim.org/jobim/bitstream/handle/2
 Tom Jobim Marina del Rey | https://www.jobim.org/jobim/bitstream/handle/2010/13160/Marina.mp3
 Tom Jobim hovendo na roseira | https://www.jobim.org/jobim/bitstream/handle/2010/13165/Chovendoroseira.mp3
 Tom Jobim Sabiá | https://www.jobim.org/jobim/bitstream/handle/2010/13172/SongoftheSabia.mp3
+Frank Sinatra | https://www.jobim.org/jobim/bitstream/handle/2010/12383/The%20Girl%20From%20Ipanema.mp3
 João Gilberto Chega de saudade | https://dn721309.ca.archive.org/0/items/joao-gilberto-chega-de-saudade/01%20Chega%20de%20saudade.mp3
 João Gilberto Lobo bobo João | https://ia801904.us.archive.org/33/items/joao-gilberto-chega-de-saudade/02%20Lobo%20bobo.mp3
 João Gilberto Brigas, nunca mais | https://ia801904.us.archive.org/33/items/joao-gilberto-chega-de-saudade/03%20Brigas%2C%20nunca%20mais.mp3
@@ -52,7 +53,6 @@ João Gilberto Morena boca de ouro | https://dn721309.ca.archive.org/0/items/joa
 João Gilberto Bim bom | https://dn721309.ca.archive.org/0/items/joao-gilberto-chega-de-saudade/10%20Bim%20bom.mp3
 João Gilberto Aos pés da cruz | https://dn721309.ca.archive.org/0/items/joao-gilberto-chega-de-saudade/11%20Aos%20p%C3%A9s%20da%20cruz.mp3
 João Gilberto É luxo só | https://dn721309.ca.archive.org/0/items/joao-gilberto-chega-de-saudade/12%20%C3%89%20luxo%20s%C3%B3.mp3
-Frank Sinatra | https://www.jobim.org/jobim/bitstream/handle/2010/12383/The%20Girl%20From%20Ipanema.mp3
 Chico Buarque Deus lhe pague | https://dn721208.ca.archive.org/0/items/1971-chico-buarque-construcao/01%20-%20Deus%20lhe%20pague.mp3
 Chico Buarque Cotidiano | https://dn721208.ca.archive.org/0/items/1971-chico-buarque-construcao/02%20-%20Cotidiano.mp3
 Chico Buarque Desalento | https://dn721208.ca.archive.org/0/items/1971-chico-buarque-construcao/03%20-%20Desalento.mp3
