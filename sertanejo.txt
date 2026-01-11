@@ -30,16 +30,6 @@ Cascatinha e Inhana Meu Primeiro Amor | https://dn721904.ca.archive.org/0/items/
 Cascatinha e Inhana Iracema | https://dn721904.ca.archive.org/0/items/1955-cascatinha-e-inhana-cantando-pra-voce/03%20-%20Iracema.mp3
 Cascatinha e Inhana Queira-Me Muito | https://dn721904.ca.archive.org/0/items/1955-cascatinha-e-inhana-cantando-pra-voce/02%20-%20Queira-me%20Muito.mp3
 Cascatinha e Inhana Solidão | https://dn721904.ca.archive.org/0/items/1955-cascatinha-e-inhana-cantando-pra-voce/01%20-%20Solid%C3%A3o%20%28Che-picassu-mi%29.mp3
-Almir Sater Trem Do Pantanal | https://dn721808.ca.archive.org/0/items/1982-almir-sater-doma/01%20-%20Trem%20Do%20Pantanal.mp3
-Almir Sater Viola E Vinho Velho | https://dn721808.ca.archive.org/0/items/1982-almir-sater-doma/10%20-%20Viola%20E%20Vinho%20Velho.mp3
-Almir Sater Na Subida Do Balão | https://dn721808.ca.archive.org/0/items/1982-almir-sater-doma/09%20-%20Na%20Subida%20Do%20Balao.mp3
-Almir Sater Varandas | https://dn721808.ca.archive.org/0/items/1982-almir-sater-doma/08%20-%20Varandas.mp3
-Almir Sater Boiadeiro Do Nabileque | https://dn721808.ca.archive.org/0/items/1982-almir-sater-doma/07%20-%20Boiadeiro%20Do%20Nabileque.mp3
-Almir Sater Cavaleiro Da Lua | https://dn721808.ca.archive.org/0/items/1982-almir-sater-doma/06%20-%20Cavaleiro%20Da%20Lua.mp3
-Almir Sater Sonhos Guaranis | https://dn721808.ca.archive.org/0/items/1982-almir-sater-doma/05%20-%20Sonhos%20Guaranis.mp3
-Almir Sater O Último Condor | https://dn721808.ca.archive.org/0/items/1982-almir-sater-doma/04%20-%20O%20Ultimo%20Condor.mp3
-Almir Sater Doma | https://dn721808.ca.archive.org/0/items/1982-almir-sater-doma/03%20-%20Doma.mp3
-Almir Sater Galopada | https://dn721808.ca.archive.org/0/items/1982-almir-sater-doma/02%20-%20Galopada.mp3
 Tiâo Carreiro e Pardinho - Alma de Boêmio | https://dn721509.ca.archive.org/0/items/1961-tiao-carreiro-e-pardinho-rei-do-gado/01-Alma%20de%20boemio.mp3
 Tiâo Carreiro e Pardinho - Borboleta do Asfalto | https://dn721509.ca.archive.org/0/items/1961-tiao-carreiro-e-pardinho-rei-do-gado/02-Borboleta%20do%20asfalto.mp3
 Tiâo Carreiro e Pardinho - Punhal da Falsidade | https://dn721509.ca.archive.org/0/items/1961-tiao-carreiro-e-pardinho-rei-do-gado/03-Punhal%20da%20falsidade%20%28mulher%20sem%20nome%29.mp3
@@ -65,3 +55,13 @@ Milionário e José Rico - Lembrança | https://archive.org/download/11-milionar
 Milionário e José Rico - Viva a Vida | https://archive.org/download/11-milionario-jose-rico-lembranca/01%20-%20Milion%C3%A1rio%20%26%20Jos%C3%A9%20Rico%20-%20Viva%20A%20Vida%21.mp3
 Milionário e José Rico - Praia Deserta | https://archive.org/download/11-milionario-jose-rico-lembranca/07%20-%20Milion%C3%A1rio%20%26%20Jos%C3%A9%20Rico%20-%20Praia%20Deserta.mp3
 Milionário e José Rico - Duas Camisas |  https://archive.org/download/11-milionario-jose-rico-lembranca/05%20-%20Milion%C3%A1rio%20%26%20Jos%C3%A9%20Rico%20-%20Duas%20Camisas%20%28Agora%20Voc%C3%AA%20Vai%20Decidir%29.mp3
+Almir Sater Trem Do Pantanal | https://dn721808.ca.archive.org/0/items/1982-almir-sater-doma/01%20-%20Trem%20Do%20Pantanal.mp3
+Almir Sater Viola E Vinho Velho | https://dn721808.ca.archive.org/0/items/1982-almir-sater-doma/10%20-%20Viola%20E%20Vinho%20Velho.mp3
+Almir Sater Na Subida Do Balão | https://dn721808.ca.archive.org/0/items/1982-almir-sater-doma/09%20-%20Na%20Subida%20Do%20Balao.mp3
+Almir Sater Varandas | https://dn721808.ca.archive.org/0/items/1982-almir-sater-doma/08%20-%20Varandas.mp3
+Almir Sater Boiadeiro Do Nabileque | https://dn721808.ca.archive.org/0/items/1982-almir-sater-doma/07%20-%20Boiadeiro%20Do%20Nabileque.mp3
+Almir Sater Cavaleiro Da Lua | https://dn721808.ca.archive.org/0/items/1982-almir-sater-doma/06%20-%20Cavaleiro%20Da%20Lua.mp3
+Almir Sater Sonhos Guaranis | https://dn721808.ca.archive.org/0/items/1982-almir-sater-doma/05%20-%20Sonhos%20Guaranis.mp3
+Almir Sater O Último Condor | https://dn721808.ca.archive.org/0/items/1982-almir-sater-doma/04%20-%20O%20Ultimo%20Condor.mp3
+Almir Sater Doma | https://dn721808.ca.archive.org/0/items/1982-almir-sater-doma/03%20-%20Doma.mp3
+Almir Sater Galopada | https://dn721808.ca.archive.org/0/items/1982-almir-sater-doma/02%20-%20Galopada.mp3
