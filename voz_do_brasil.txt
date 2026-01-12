@@ -1,8 +1,23 @@
-A Voz do Brasil 16/01/2026 21 horas | https://audios.ebc.com.br/radiogov/2026/01/16-01-26-a-voz-do-brasil.mp3
-A Voz do Brasil 15/01/2026 21 horas | https://audios.ebc.com.br/radiogov/2026/01/15-01-26-a-voz-do-brasil.mp3
-A Voz do Brasil 14/01/2026 21 horas | https://audios.ebc.com.br/radiogov/2026/01/14-01-26-a-voz-do-brasil.mp3
-A Voz do Brasil 13/01/2026 21 horas | https://audios.ebc.com.br/radiogov/2026/01/13-01-26-a-voz-do-brasil.mp3
-A Voz do Brasil 12/01/2026 21 horas | https://audios.ebc.com.br/radiogov/2026/01/12-01-26-a-voz-do-brasil.mp3
+A Voz do Brasil | import java.awt.Desktop;
+import java.net.URI;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+public class Redirecionador {
+    public static void main(String[] args) {
+        try {
+            // 1. O App lê o link de dentro de um arquivo TXT
+            String link = new String(Files.readAllBytes(Paths.get("https://iartium.com/escalaDiaAno.html"))).trim();
+            
+            // 2. O App abre esse link no navegador nativo
+            if (Desktop.isDesktopSupported()) {
+                Desktop.getDesktop().browse(new URI(link));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
 
 A Voz do Brasil 09/01/2026 21 horas | https://audios.ebc.com.br/radiogov/2026/01/09-01-26-a-voz-do-brasil.mp3
 A Voz do Brasil 08/01/2026 21 horas | https://audios.ebc.com.br/radiogov/2026/01/08-01-26-a-voz-do-brasil.mp3
