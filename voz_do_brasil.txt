@@ -21,6 +21,3 @@ public class Redirecionador {
 
 A Voz do Brasil 09/01/2026 21 horas | https://audios.ebc.com.br/radiogov/2026/01/09-01-26-a-voz-do-brasil.mp3
 A Voz do Brasil 08/01/2026 21 horas | https://audios.ebc.com.br/radiogov/2026/01/08-01-26-a-voz-do-brasil.mp3
-A Voz do Brasil 07/01/2026 21 horas | https://audios.ebc.com.br/radiogov/2026/01/07-01-26-a-voz-do-brasil.mp3
-A Voz do Brasil 06/01/2026 21 horas | https://audios.ebc.com.br/radiogov/2026/01/06-01-26-a-voz-do-brasil.mp3
-A Voz do Brasil 05/01/2026 21 horas | https://audios.ebc.com.br/radiogov/2026/01/05-01-26-a-voz-do-brasil.mp3
