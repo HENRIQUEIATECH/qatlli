@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="RBA Rádio Brasil Artes - O melhor da música brasileira, Bossa Nova e Sertanejo. Software de alta performance em JAVA por Paulo Salomão.">
+    <meta name="description" content="RBA Rádio Brasil Artes - O melhor da música brasileira, Bossa Nova e Sertanejo. Software de alta performance em JAVA por Paulo Salomão IArtium.">
     <meta name="keywords" content="Rádio, Música Brasileira, Bossa Nova, JAVA, Software, Paulo Salomão">
     <title>Paulo Salomão - RBA Rádio Brasil Artes</title>
+    <meta name="robots" content="index, follow">
     <link rel="icon" type="image/png" href="logo.png">
     <style>
         /* Configurações Gerais */
@@ -110,18 +111,126 @@
             header { padding: 15px; }
             nav { display: none; }
         }
+        
+        /* Estilos da Seção de Impacto */
+.impacto-social { padding: 80px 10%; background: #ffffff; }
+.impacto-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+.impacto-card { border-left: 4px solid #D4AF37; padding: 20px; background: #fdfdfd; transition: 0.3s; }
+.impacto-card:hover { transform: scale(1.02); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+.impacto-card h3 { color: #2d5a27; margin-bottom: 15px; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 1px; }
+.impacto-card p { line-height: 1.6; color: #444; font-size: 1.05rem; }
+.impacto-titulo-principal { text-align: center; font-size: 2.8rem; color: #111; margin-bottom: 50px; }
+.destaque-gold { color: #8B6B23; font-weight: bold; }
+
+/* Seção de Investidores */
+.investidores { padding: 80px 10%; background: #302c34; color: white; text-align: center; }
+.investidores h2 { font-size: 2.8rem; margin-bottom: 20px; color: #D4AF37; }
+.investidores-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }
+.invest-card { background: rgba(255,255,255,0.05); padding: 30px; border-radius: 15px; border: 1px solid #D4AF37; }
+.invest-card h4 { font-size: 1.3rem; margin-bottom: 15px; color: #D4AF37; }
+.btn-investir { 
+    display: inline-block; margin-top: 40px; padding: 18px 40px; 
+    background: #D4AF37; color: #302c34; font-weight: bold; 
+    text-decoration: none; border-radius: 50px; transition: 0.3s;
+}
+.btn-investir:hover { background: #fff; transform: scale(1.05); }
+
+/* Seção do Vídeo de Pitch */
+.pitch-video-section {
+    padding: 60px 10%;
+    background: #f4f4f4; /* Fundo cinza claro para destacar do escuro dos investidores */
+    text-align: center;
+}
+.video-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    border: 3px solid #D4AF37; /* Moldura dourada para combinar com a marca */
+}
+.video-wrapper iframe, .video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.pitch-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Seção Áudio ESG */
+.secao-audio-esg {
+    padding: 80px 10%;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d5a27 100%); /* Verde escuro profissional */
+    color: white;
+    text-align: center;
+    border-top: 4px solid #D4AF37;
+}
+.audio-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+.esg-badge {
+    background: #D4AF37;
+    color: #1a1a1a;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.audio-player-container {
+    margin-top: 30px;
+    background: #fff;
+    border-radius: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+audio {
+    width: 100%;
+    height: 40px;
+}
+.esg-desc {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 20px 0;
+    color: #ddd;
+}
     </style>
 </head>
 <body>
 
     <header>
         <div class="logo-area">
-            <img src="logo.png" alt="Logo">
+            <img src="logo.png" alt="Agência criadora de Softwear em JAVA Paulo Salomao e IArtium">
             <h1>Paulo Salomão</h1>
         </div>
         <nav>
-            <a href="#">SoftWear</a>
+            <a href="#">Início</a>           
+            <a href="english_version.html" style="color: #ff0000;">English Version</a>
             <a href="#download">Download App</a>
+            <a href="#impacto">Impacto Social</a>
+            <a href="#investidores" style="color: #D4AF37;">Investidores</a>
+            <a href="#esg-audio">Audio</a>             
+            <a href="#video">Video</a>
             <a href="#historia">Nossa História</a>
             <a href="#contato">Contato</a>
             <a href="https://wa.me/5564992962999" class="nav-whatsapp" target="_blank">WhatsApp</a>
@@ -146,7 +255,7 @@
         </div>
         
         <div class="download-container">
-            <img src="icone-app.png" alt="Ícone RBA" class="app-icon">
+            <img src="icone-app.png" alt="Aplicativo RBA Rádio Brasil Artes softwear em JAVA" class="app-icon">
             <div class="download-buttons">
                 <a href="RBA.apk" download="RBA-Radio-Brasil-Artes.apk" class="btn-download btn-android">
                     INSTALAR RBA ANDROID (.APK)
@@ -167,7 +276,96 @@
 
     <section class="banner-grafite">
         <blockquote>
-            <img src="cell1.png" alt="Aplicativo">
+            <img src="cell1.png" alt="Aplicativo RBA Rádio Brasil Artes softwear em JAVA">
+            
+            
+            </section>
+
+    <div class="spacer-gold"></div>
+    <div class="gold-line"></div>
+
+    <section class="impacto-social" id="impacto">
+        <h2 class="impacto-titulo-principal">Compromisso e Impacto Social</h2>
+        <div class="impacto-container">
+            <div class="impacto-card">
+                <h3>O Desafio Humano</h3>
+                <p>Muitos brasileiros enfrentam a solidão e o isolamento, o que pode levar a quadros de depressão. Em áreas remotas, o acesso a canais simples de informação de saúde e cultura é limitado, gerando um abismo emocional.</p>
+            </div>
+            <div class="impacto-card">
+                <h3>Tecnologia Próxima</h3>
+                <p>O <span class="destaque-gold">RBA</span> é uma ponte. Desenvolvido em <span class="destaque-gold">JAVA Nativo</span> com apenas <span class="destaque-gold">5,1 MB</span>, ele democratiza a cultura e serviços de saúde mental, funcionando em qualquer dispositivo.</p>
+            </div>
+            <div class="impacto-card">
+                <h3>Resultados em Vidas</h3>
+                <p>Integramos podcasts de saúde física, mental e orientações jurídicas. Ouvir usuários dizerem <i>"não sabia que nosso Brasil era tão rico"</i> valida nossa missão de combate à solidão.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="investidores" id="investidores">
+        <h2>Oportunidade para Investidores</h2>
+        <p>Participe da expansão da tecnologia que está unindo o Brasil através da cultura e saúde digital.</p>
+
+        <div class="investidores-grid">
+            <div class="invest-card">
+                <h4>Alta Escalabilidade</h4>
+                <p>Tecnologia Java Nativa de baixo consumo. Nosso app roda onde os concorrentes travam, alcançando o "Brasil Profundo".</p>
+            </div>
+            <div class="invest-card">
+                <h4>Impacto Mensurável</h4>
+                <p>Atuamos diretamente nos ODS (Objetivos de Desenvolvimento Sustentável) da ONU: Saúde, Bem-Estar e Redução de Desigualdades.</p>
+            </div>
+            <div class="invest-card">
+                <h4>Visão de Futuro</h4>
+                <p>Plataforma híbrida de rádio, teleorientação e curadoria cultural com custo de manutenção otimizado.</p>
+            </div>
+        </div>
+
+        <a href="https://wa.me/5564992962999?text=Olá%20Paulo,%20gostaria%20de%20receber%20o%20Pitch%20Deck%20para%20investimento%20no%20RBA." class="btn-investir">
+            SOLICITAR APRESENTAÇÃO PARA INVESTIDORES
+        </a>
+    </section>
+    
+    <section class="secao-audio-esg" id="esg-audio">
+        <div class="audio-card">
+            <span class="esg-badge">Impacto ESG & Tecnologia</span>
+            <h2 style="font-size: 2.2rem; margin-top: 15px; color: #D4AF37;">Análise de Viabilidade Social</h2>
+            
+            <p class="esg-desc">
+                Ouça a análise técnica sobre como o <b>RBA Rádio Brasil Artes</b> utiliza a eficiência do Java Nativo para promover a democratização cultural e o suporte à saúde mental em larga escala.
+            </p>              
+
+            <div class="audio-player-container">
+                <audio controls src="https://ia600101.us.archive.org/18/items/iartium.com/R%C3%A1dio_Brasil_Artes_Une_Cultura_e_Inclus%C3%A3o.m4a" controls></audio>
+
+              
+            </div>
+
+            <p style="margin-top: 20px; font-size: 0.9rem; color: #D4AF37;">
+                <b>Tópicos abordados:</b> Governança Social, Inclusão Digital e Eficiência de Dados.
+            </p>
+        </div>
+    </section>
+    
+    <section class="pitch-video-section" id="video">>
+        <h2 style="color: #2d5a27; font-size: 2.5rem; margin-bottom: 10px;">Assista ao nosso Pitch</h2>
+        <p class="pitch-subtitle">Entenda em 2 minutos como a IArtium está transformando a tecnologia nativa em impacto social real para todo o Brasil.</p>
+        
+        <div class="video-wrapper">
+            <iframe allowfullscreen="" class="BLOG_video_class" height="266" src="https://www.youtube.com/embed/FQ_ALxe4WJc" width="320" youtube-src-id="FQ_ALxe4WJc">
+                    title="RBA Pitch Deck" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+            
+            </div>
+
+        <p style="margin-top: 30px; font-weight: bold; color: #8B6B23;">
+            <span class="asterisk" style="font-size: 1.5rem;">*</span> 
+            Apresentação técnica para Bancas Avaliadoras e Comitês de Investimento (ESG).
+        </p>
+    </section>
             
         </blockquote>
     </section>
@@ -184,7 +382,8 @@
                 <p>Criamos <strong>SoftWear</strong> para todo tipo de necessidade, em alta programação em <strong>JAVA</strong> para aplicativos de estrutura e pequenos e grandes projetos, com design e arte integrados.</p>
                 <p>A estrutura da Empresa está em duas principais bases, a <strong>Paulo Salomão</strong> focada em acessoria de Empreendedorismo para o seu usuário. A <strong>IArtium</strong> totalmente direcionada em Tecnologia.</p>
                 <br>
-                <p>A RBA nasceu do desejo de resgatar e preservar a alma sonora do nosso país. Mais do que uma rádio, somos um museu vivo.</p>
+                <p>A RBA nasceu do desejo de resgatar e preservar a alma sonora do nosso país. Mais do que uma rádio, somos um museu vivo. 
+                O softwear RBA foi projetado sob o conceito de Performance Nativa. Desenvolvido 100% em <strong>JAVA</strong> nativo para garantir leveza e velocidade extrema.</p>
             </div>
             <div>
                 <p>Os aplicativos RBA são gratuitos e sempre terá aumentado o repertório de áudios sem a necessidade de baixar outro novo aplicativo.</p>
@@ -212,7 +411,7 @@
     </section>
 
     <footer>
-        <img src="loggofooter.png" alt="Logo">
+        <img src="loggofooter.png" alt="Agência criadora de Softwear em JAVA Paulo Salomao e IArtium e Aplicativo RBA">
         <p>Direitos Autorais &copy; 2026 Paulo Salomão Agência de Criadores de Softwears em JAVA</p>
         <p>RBA Rádio Brasil Arte</p>
         <p>IArtium technology | iartium.com </p>
@@ -244,6 +443,64 @@
             window.location.href = `mailto:${emailDono}?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(corpo)}`;
         }
     </script>
+<script>
+    (function() {
+        // 1. Identifica o país do visitante (Grátis e rápido)
+        fetch('https://ipapi.co/json/')
+        .then(res => res.json())
+        .then(data => {
+            const pais = data.country_name || "Desconhecido";
+            
+            // 2. Envia para o seu servidor no PythonAnywhere
+            // SUBSTITUA 'SEU_USUARIO' pelo seu nome de usuário do PythonAnywhere
+            fetch(`https://PAULOCORREA.pythonanywhere.com/registrar?pais=${pais}`)
+            .then(response => console.log("Acesso registrado: " + pais))
+            .catch(err => console.error("Erro ao registrar:", err));
+        })
+        .catch(err => console.log("Erro ao identificar localização"));
+    })();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "url": "https://iartium.com",
+  "name": "Softwear em JAVA",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+55-64-99296-2999",
+    "contactType": "Customer service"
+  }
+}
+</script>
+    <script>
+        // 1. Pegar referências para os elementos do HTML
+        const audioPlayer = document.getElementById('audio-player');
+        const playFromStartBtn = document.getElementById('play-from-start');
+        const playFromMinute5Btn = document.getElementById('play-from-minute-5');
+        const playFromMinute10Btn = document.getElementById('play-from-minute-10');
 
+        // 2. Adicionar os "listeners" de evento de clique a cada botão
+        playFromStartBtn.addEventListener('click', () => {
+            playFromSpecificTime(0); // Inicia do segundo 0
+        });
+
+        playFromMinute5Btn.addEventListener('click', () => {
+            const fiveMinutesInSeconds = 5 * 60;
+            playFromSpecificTime(fiveMinutesInSeconds); // Inicia do segundo 300
+        });
+
+        playFromMinute10Btn.addEventListener('click', () => {
+            const tenMinutesInSeconds = 10 * 60;
+            playFromSpecificTime(tenMinutesInSeconds); // Inicia do segundo 600
+        });
+
+        // 3. Função principal para definir o tempo e tocar o áudio
+        function playFromSpecificTime(seconds) {
+            audioPlayer.currentTime = seconds;
+            audioPlayer.play();
+        }
+
+    </script>
 </body>
 </html>
