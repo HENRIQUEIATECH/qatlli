@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecionamento Diário</title>
+</head>
+<body>
+    <header>
+        <h1>Verificando conteúdo do dia...</h1>
+    </header>
+
+    <script>
+        window.onload = function() {
+            const agora = new Date();
+            
+            // Formata a data como DD/MM (exemplo: 12/01)
+            const dia = String(agora.getDate()).padStart(2, '0');
+            const mes = String(agora.getMonth() + 1).padStart(2, '0');
+            const dataHoje = dia + "/" + mes;
+
+            // LISTA DE REDIRECIONAMENTOS
+            // Você pode adicionar todos os dias do ano aqui
+            const linksPorData = {
+                "09/01": "https://audios.ebc.com.br/radiogov/2026/01/09-01-26-a-voz-do-brasil.mp3",
+                "10/01": "brasil10jan.html",
+                "11/01": "brasil11jan.html",
+                "12/01": "voz_do_brasil_jan.txt",
+                "13/01": "https://www.ioshvain.org/p/pagina-dia-13.html",
+                "25/12": "https://www.ioshvain.org/p/especial-natal.html"
+                // Adicione quantos dias quiser seguindo o padrão "DD/MM": "link",
+            };
+
+            // Verifica se a data de hoje está na lista
+            if (linksPorData[dataHoje]) {
+                window.location.href = linksPorData[dataHoje];
+            } else {
+                // Mensagem caso o dia atual não tenha um link cadastrado
+                document.body.innerHTML = `
+                    <div style="text-align:center; margin-top:50px; font-family: sans-serif;">
+                        <h1>Conteúdo Indisponível</h1>
+                        <p>Não encontramos uma programação específica para hoje (${dataHoje}).</p>
+                        <a href="https://www.ioshvain.org/">Voltar para o início</a>
+                    </div>
+                `;
+            }
+        };
+    </script>
+</body>
+</html>
