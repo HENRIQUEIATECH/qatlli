@@ -7,7 +7,7 @@ public class Redirecionador {
     public static void main(String[] args) {
         try {
             // 1. O App lê o link de dentro de um arquivo TXT
-            String link = new String(Files.readAllBytes(Paths.get("https://iartium.com/escalaDiaAno.html"))).trim();
+            String link = new String(Files.readAllBytes(Paths.get("https://iartium.com/qatlli/escalaDiaAno.html"))).trim();
             
             // 2. O App abre esse link no navegador nativo
             if (Desktop.isDesktopSupported()) {
