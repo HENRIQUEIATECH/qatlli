@@ -1,1 +1,3 @@
+A Voz do Brasil | window.location.href = "https://iartium.com/escalaDiaAno.html ";
 A Voz do Brasil | https://iartium.com/escalaDiaAno.txt
+A Voz do Brasil | https://iartium.com/escalaDiaAno.html 
