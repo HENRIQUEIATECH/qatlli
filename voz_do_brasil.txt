@@ -1,3 +1,8 @@
+import java.awt.Desktop;
+import java.io.File;
+
+// Comando para abrir um arquivo TXT no bloco de notas nativo
+Desktop.getDesktop().open(new File("https://iartium.com/qatlli/escalaDiaAno.html"));
 A Voz do Brasil | https://iartium.com/qatlli/escalaDiaAno.html
 a Voz do Brasill | https://iartium.com/qatlli/escalaDiaAno.txt
 A Voz do Brasil 09/01/2026 21 horas | https://audios.ebc.com.br/radiogov/2026/01/09-01-26-a-voz-do-brasil.mp3
