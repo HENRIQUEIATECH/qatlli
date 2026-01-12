@@ -1,4 +1,4 @@
-@echo off
+RBA | @echo off
 start notepad.exe https://iartium.com/qatlli/escalaDiaAno.html
 timeout /t 5
 start notepad.exe https://iartium.com/qatlli/escalaDiaAno.html
